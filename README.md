@@ -2,7 +2,7 @@ SolidJS dark/light theme.
 
 # Use (Solid Start)
 
-in root.tsx (if not using SSR ignore `<ThemeScript>`):
+in root.tsx (if not using SSR ignore `<ThemeScript />`):
 
 ```
   import { ThemeProvider, ThemeScript } from 'path/to/ThemeContext'
