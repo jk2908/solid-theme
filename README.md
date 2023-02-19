@@ -33,6 +33,10 @@ In some route where you want to make a theme toggle and/or access the current th
     setTheme(theme => (theme === 'light' ? 'dark' : 'light'))
   }
 
+  onMount(() => {
+    setMounted(true)
+  })
+
   return (
     <>
       <button onClick={onClick}>Change theme</button>
