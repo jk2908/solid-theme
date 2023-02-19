@@ -20,7 +20,7 @@ in root.tsx (if not using SSR ignore `<ThemeScript />`):
   </AnimationProvider>
 ```
 
-In some route where you want to make a theme toggle and/or access the current theme (if using SSR, check app is mounted before accessing current theme, otherwise, safely check for theme() right away):
+In some route where you want to make a theme toggle and/or access the current theme (if using SSR, check app is mounted before accessing current theme, otherwise, safely check for `theme()` immediately):
 
 ```
   import { createSignal, onMount, Show } from 'solid-js'
