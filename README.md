@@ -2,7 +2,7 @@ SolidJS dark/light theme.
 
 # Use (Solid Start)
 
-in root.tsx:
+in root.tsx (if not using SSR ignore <ThemeScript>):
 
 ```
   import { ThemeProvider, ThemeScript } from 'path/to/ThemeContext'
@@ -20,7 +20,7 @@ in root.tsx:
   </AnimationProvider>
 ```
 
-In some route where you want to make a theme toggle and/or access the current theme (if using SSR, check app is mounted before accessing current theme):
+In some route where you want to make a theme toggle and/or access the current theme (if using SSR, check app is mounted before accessing current theme, otherwise, safely check for theme() right away):
 
 ```
   import { createSignal, onMount, Show } from 'solid-js'
