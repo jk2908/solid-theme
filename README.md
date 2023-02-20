@@ -13,11 +13,11 @@ in root.tsx (if not using SSR ignore `<ThemeScript />`):
   </Head>
 
 
-  <AnimationProvider>
+  <ThemeProvider>
     <Routes>
       <FileRoutes />
     </Routes>
-  </AnimationProvider>
+  </ThemeProvider>
 ```
 
 In some route where you want to make a theme toggle and/or access the current theme (if using SSR, check app is mounted before accessing current theme, otherwise, safely check for `theme()` immediately):
